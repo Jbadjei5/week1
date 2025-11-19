@@ -1,0 +1,35 @@
+<div 
+  class="card"
+  [ngClass]="{ 'highlight': student.age > 22 }"
+>
+  <!-- IMAGE -->
+  <img 
+    [src]="student.imageUrl"
+    alt="Student"
+    class="student-img"
+  />
+
+  <!-- NAME + INITIALS -->
+  <div class="name-row">
+    <h2 class="full-name">{{ student.name }}</h2>
+    <span class="initials">{{ student.name | initials }}</span>
+  </div>
+
+  <!-- AGE -->
+  <p class="age">Age: {{ student.age }}</p>
+
+  <!-- COURSE -->
+  <div class="course-row">
+    <p class="course">Course: {{ student.course }}</p>
+  </div>
+
+  <!-- TOGGLE BUTTON -->
+  <button (click)="toggleDetails()">
+    {{ showDetails ? 'Hide Details' : 'Show Details' }}
+  </button>
+
+  <!-- EXTRA DETAILS -->
+  <div *ngIf="showDetails">
+    <p><strong>Extra:</strong> {{ student.extra }}</p>
+  </div>
+</div>

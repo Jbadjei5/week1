@@ -1,0 +1,9 @@
+<div class="student-list">
+  <h1>Student Directory</h1>
+  <div class="student-grid">
+    <app-student-card 
+      *ngFor="let student of students" 
+      [student]="student">
+    </app-student-card>
+  </div>
+</div>
