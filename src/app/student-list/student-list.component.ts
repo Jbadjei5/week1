@@ -11,27 +11,32 @@ import { Student } from '../student-card/student-card.component';
   styleUrl: './student-list.component.css'
 })
 export class StudentListComponent {
-  students: Student[] = [
+  
+    students = [
     {
       id: 1,
-      name: 'Alex Johnson',
-      age: 21,
+      name: 'John Doe',
+      age: 20,
       course: 'Computer Science',
-      imageUrl: 'https://randomuser.me/api/portraits/men/32.jpg'
+      imageUrl: 'https://randomuser.me/api/portraits/men/1.jpg',
+     
     },
     {
       id: 2,
-      name: 'Maria Garcia',
-      age: 22,
-      course: 'Data Science',
-      imageUrl: 'https://randomuser.me/api/portraits/women/44.jpg'
+      name: 'Sarah Mensah',
+      age: 24,
+      course: 'Mathematics',
+      imageUrl: 'https://randomuser.me/api/portraits/women/1.jpg',
+      
     },
     {
       id: 3,
-      name: 'James Wilson',
-      age: 20,
-      course: 'Artificial Intelligence',
-      imageUrl: 'https://randomuser.me/api/portraits/men/75.jpg'
+      name: 'Kwame Boateng',
+      age: 23,
+      course: 'Business Administration',
+      imageUrl: 'https://randomuser.me/api/portraits/men/2.jpg',
+      
     }
   ];
 }
+  

@@ -23,13 +23,5 @@
     <p class="course">Course: {{ student.course }}</p>
   </div>
 
-  <!-- TOGGLE BUTTON -->
-  <button (click)="toggleDetails()">
-    {{ showDetails ? 'Hide Details' : 'Show Details' }}
-  </button>
-
-  <!-- EXTRA DETAILS -->
-  <div *ngIf="showDetails">
-    <p><strong>Extra:</strong> {{ student.extra }}</p>
-  </div>
+ 
 </div>

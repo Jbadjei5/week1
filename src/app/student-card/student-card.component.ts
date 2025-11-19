@@ -26,11 +26,7 @@ export class StudentCardComponent implements OnInit {
     console.log(`Student card loaded: ${this.student.name}`);
   }
 
-  toggleDetails(): void {
-    this.showDetails = !this.showDetails;
-  }
 
-  getAgeClass(): string {
-    return this.student.age >= 20 ? 'mature' : 'young';
   }
-}
+ 
+

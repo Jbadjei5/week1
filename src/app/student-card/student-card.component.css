@@ -1,22 +1,23 @@
 .card {
-  width: 260px;
+  width: 320px;
   padding: 15px;
   border: 1px solid #ccc;
   margin: 10px;
   border-radius: 12px;
   background: #fff;
   font-family: Arial, sans-serif;
+  height: 320px;
 }
 
-/* IMAGE TAKES ALMOST HALF OF THE CARD */
+
 .student-img {
   width: 100%;
-  height: 180px;    /* ~half of 360px card */
+  height: 220px;   
   object-fit: cover;
   border-radius: 10px;
 }
 
-/* NAME + INITIALS IN A ROW */
+
 .name-row {
   display: flex;
   justify-content: space-between;
@@ -37,13 +38,13 @@
   border-radius: 6px;
 }
 
-/* AGE BELOW NAME */
+
 .age {
   margin: 6px 0;
   font-size: 15px;
 }
 
-/* COURSE ON SAME HORIZONTAL LINE */
+
 .course-row {
   display: flex;
   justify-content: flex-start;
@@ -55,19 +56,3 @@
   font-size: 15px;
 }
 
-/* HIGHLIGHT BASED ON AGE */
-.highlight {
-  border-color: blue;
-  background: #eef4ff;
-}
-
-/* BUTTON */
-button {
-  margin-top: 10px;
-  width: 100%;
-  padding: 8px;
-  border-radius: 8px;
-  background: #007bff;
-  color: white;
-  border: none;
-}
